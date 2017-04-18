@@ -1,6 +1,7 @@
 $("document").ready(function(){
     
-    var fixNavBar = $('#header-navbar').offset().top;       
+    // Functionality to make que nav bar stick to the top when scrolling
+    var fixNavBar = $("#header-navbar").offset().top;       
     console.log(fixNavBar);
     
     $(window).scroll(function() {                  
@@ -8,17 +9,11 @@ $("document").ready(function(){
         var currentScroll = $(window).scrollTop(); 
     
         if (currentScroll >= fixNavBar) {          
-            $('#header-navbar').css({  
-                position: 'fixed',
-                margin: '0 auto',
-                left: '0',
-                right: '0',
-                top: '0'
-            });
+            $("#header-navbar").addClass("fixed-navbar");
+            $("#main").css("margin-top", "75px")
         } else {                                 
-            $('#header-navbar').css({            
-                position: 'static'
-            });
+           $("#header-navbar").removeClass("fixed-navbar");
+           $("#main").css("margin-top", "0")
         }
     });
     

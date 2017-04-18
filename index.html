@@ -22,7 +22,8 @@
     
 <body>
     <header>
-        <div class="container">
+        <div id="home" class="container">
+            <!-- Background logo, phto, and text over logo -->
             <div class="row">
                 <div id="header-logo">
                     <img src="img/perfil.jpg"></img>
@@ -31,15 +32,16 @@
                 </div>
             </div>
         </div>
+        <!-- Header Navigation Bar -->
         <div id="header-navbar" class="container">
             <div class="row">
                 <div class="col-md-12">
                     <ul class="list-inline">
                        <li class="list-inline-item">
-                           <a href="#">Home</a>
+                           <a href="#home">Home</a>
                        </li>
                        <li class="list-inline-item">
-                           <a href="#">About</a>
+                           <a href="#about-skills">About</a>
                        </li>
                        <li class="list-inline-item">
                            <a href="#">Projects</a>
@@ -54,21 +56,67 @@
     </header>
     
     <div id="main" class="container">
+        <!-- About & Skills Saction-->
         <section id="about-skills">
             <div class="row">
+                <!-- ABOUT -->
                 <div class="col-md-6">
                     <h3>About</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus malesuada elit. In a aliquet nisi. Nam gravida nec velit et blandit. Vivamus iaculis tellus nec libero condimentum semper. Fusce eget vulputate ex. Etiam efficitur vitae elit vel fermentum. Curabitur nec varius elit. Aenean in lacus ac diam tincidunt aliquet.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus malesuada elit. In a aliquet nisi. Nam gravida nec velit et blandit. Vivamus iaculis tellus nec libero condimentum semper. Fusce eget vulputate ex. Etiam efficitur vitae elit vel fermentum. Curabitur nec varius elit. Aenean in lacus ac diam tincidunt aliquet.</p>
-                    
                 </div>
+                <!--Skills -->
                 <div class="col-md-6">
                     <h3>Skills</h3>
-                    <div>
-                        <i class="fa fa-html5" aria-hidden="true"></i>
+                    <div id="skills-list">
+                        <div class="skill">
+                            <i class="fa fa-lightbulb-o fa-4x" aria-hidden="true"></i>
+                            <p>Fast learning</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa fa-handshake-o fa-4x" aria-hidden="true"></i>
+                            <p>Leadership</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa fa-users fa-4x" aria-hidden="true"></i>
+                            <p>Teamwork</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa fa-html5 fa-4x" aria-hidden="true"></i>
+                            <p>HTML5</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa fa-css3 fa-4x" aria-hidden="true"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa fa-mobile fa-4x" aria-hidden="true"></i>
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa fa-code fa-4x" aria-hidden="true"></i>
+                            <p>Javascript</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa fa-code fa-4x" aria-hidden="true"></i>
+                            <p>JQuery</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa fa-code-fork  fa-4x" aria-hidden="true"></i>
+                            <p>Git</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fa fa-terminal fa-4x" aria-hidden="true"></i>
+                            <p>Terminal</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+        
+        <!-- Projects section-->
+        <section id="projects">
+            
         </section>
         
     </div>

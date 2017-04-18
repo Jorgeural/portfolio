@@ -59,12 +59,18 @@ body{
   /* HEADER NAV BAR */
 #header-navbar{
     background: var(--black);
+    z-index: 1;
 }
-  
-  
+
+.fixed-navbar {
+    position: fixed;
+    margin: 0 auto 40px;
+    left: 0;
+    right: 0;
+    top: 0;
+}
 
 #header-navbar ul{
-  height: 5vh;
   min-height: 40px;
   display: flex;
   justify-content: flex-end;
@@ -98,4 +104,26 @@ body{
 #about-skills h3{
     color: var(--blue);
     text-align: center;
+    border-bottom: 2px double var(--blue);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* Skills */
+#skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.skill{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects{
+    height: 1000px;
 }
