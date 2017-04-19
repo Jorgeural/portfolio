@@ -5,17 +5,14 @@
         <meta charset="UTF-8">
         <meta name="Author" content="Jorge Urosa">
     <!-- Styles -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css" type="text/css" />
         
         
-    <!-- Scripts -->    
-        <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Scripts -->  
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/36ee2f9934.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </head>
@@ -27,7 +24,7 @@
             <div class="row">
                 <div id="header-logo">
                     <img src="img/perfil.jpg"></img>
-                    <h2>Jorge Urosa</h2>
+                    <h1>Jorge Urosa</h1>
                     <h3>Web Development</h3>    
                 </div>
             </div>
@@ -44,10 +41,10 @@
                            <a href="#about-skills">About</a>
                        </li>
                        <li class="list-inline-item">
-                           <a href="#">Projects</a>
+                           <a href="#projects">Projects</a>
                        </li>
                        <li class="list-inline-item">
-                           <a href="#">Contact</a>
+                           <a href="#contact">Contact</a>
                        </li>
                    </ul>
                 </div>
@@ -61,13 +58,13 @@
             <div class="row">
                 <!-- ABOUT -->
                 <div class="col-md-6">
-                    <h3>About</h3>
+                    <h2>About</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus malesuada elit. In a aliquet nisi. Nam gravida nec velit et blandit. Vivamus iaculis tellus nec libero condimentum semper. Fusce eget vulputate ex. Etiam efficitur vitae elit vel fermentum. Curabitur nec varius elit. Aenean in lacus ac diam tincidunt aliquet.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus malesuada elit. In a aliquet nisi. Nam gravida nec velit et blandit. Vivamus iaculis tellus nec libero condimentum semper. Fusce eget vulputate ex. Etiam efficitur vitae elit vel fermentum. Curabitur nec varius elit. Aenean in lacus ac diam tincidunt aliquet.</p>
                 </div>
                 <!--Skills -->
                 <div class="col-md-6">
-                    <h3>Skills</h3>
+                    <h2>Skills</h2>
                     <div id="skills-list">
                         <div class="skill">
                             <i class="fa fa-lightbulb-o fa-4x" aria-hidden="true"></i>
@@ -116,12 +113,98 @@
         
         <!-- Projects section-->
         <section id="projects">
-            
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Projects</h2>
+                    <!-- Slider starts here -->
+                    <div id="projects-carousel" class="carousel slide" data-ride="carousel">
+                        <!-- Sliders bullets-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#projects-carousel" data-slide-to="1"></li>
+                            <li data-target="#projects-carousel" data-slide-to="2"></li>
+                            <li data-target="#projects-carousel" data-slide-to="3"></li>
+                            <li data-target="#projects-carousel" data-slide-to="4"></li>
+                        </ol>
+                        <!-- Slider imgs and divs-->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="carousel-item-textbox">
+                                    <h3>Simon Game</h3>
+                                    <p>Simon is a game of memory skill. It creates a series of tones and lights and requires a user to repeat the series. If the user succeeds the series becomes progressively longer and more complex. <br> Play Simon Game on you browser now!</p>
+                                    <h5>Tags</h5>
+                                    <ul class="list-unstyled">
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>JavaScript</li>
+                                        <li>jQuery</li>
+                                    </ul>
+                                </div>        
+                                <img class="d-block img-fluid" src="img/simon.png" alt="Simon Game" onclick="window.open('http://codepen.io/Jorgeural/full/bWGdwE/')">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-textbox">
+                                    <h3>Calculator</h3>
+                                    <p>A basic calculator made as part of the <a href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a> front end developer roadmap. <br> Add! Substract! Multiply! Divide! You can even make square roots and raise a number! Do not forget this powerful tool in your trip. </p>
+                                    <h5>Tags</h5>
+                                    <ul class="list-unstyled">
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>JavaScript</li>
+                                        <li>jQuery</li>
+                                    </ul>
+                                </div>
+                                <img class="d-block img-fluid" src="img/calculadora.png" alt="Calculator" onclick="window.open('http://codepen.io/Jorgeural/full/gmodmX/')">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-textbox">
+                                    <h3>Pomodoro Clock</h3>
+                                    <p>The Pomodoro Technique is a time management method which uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. <br> Set your Session and Break time and start aplying this technique!</p>
+                                    <h5>Tags</h5>
+                                    <ul class="list-unstyled">
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                </div>
+                                <img class="d-block img-fluid" src="img/pomodoro.png" alt="Pomodoro Clock" onclick="window.open('http://codepen.io/Jorgeural/full/bqEWYR/')">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-textbox">
+                                    <h3>Random Quote</h3>
+                                    <p>"Only you can guide your destiny. Just listen to yourself and one of the most inspiring expressions of mankind will be the sign for you." <br> Random Quote generator using <a href="http://forismatic.com/en/" target="blank"> forismatic</a> outstanding collection of inspiring quotes via their API. </p>
+                                    <h5>Tags</h5>
+                                    <ul class="list-unstyled">
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>JavaScript</li>
+                                        <li>jQuery</li>
+                                    </ul>
+                                </div>
+                                <img class="d-block img-fluid" src="img/rq.png" alt="Random Quote generator" onclick="window.open('http://codepen.io/Jorgeural/full/YNGqbe/')">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-item-textbox">
+                                    <h3>Twitch Viewer</h3>
+                                    <p>Twitch is the world's leading video platform and community for gamers.  Using their API, you can watch your favourite Twitch channels. <br> Planning to upgrade it with local storage and Channel Add functionality, so you can add new channels!</p>
+                                    <h5>Tags</h5>
+                                    <ul class="list-unstyled">
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>JavaScript</li>
+                                        <li>jQuery</li>
+                                    </ul>
+                                </div>
+                                <img class="d-block img-fluid" src="img/twitch.png" alt="Twitch API" onclick="window.open('http://codepen.io/Jorgeural/full/oWNYNM/')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        
     </div>
     
-    <footer>
+    <footer id="contact">
         
     </footer>
     
