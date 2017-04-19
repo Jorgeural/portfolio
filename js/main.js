@@ -19,7 +19,7 @@ $("document").ready(function(){
     
     // Carousel funcitonanily change every 3sec and stop on hover
     $('#projects-carousel').carousel({
-    interval: 3000,
+    interval: 5000,
     pause: "hover"
     })
     
