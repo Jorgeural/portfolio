@@ -206,7 +206,7 @@ body{
 /* Footer */
 
     #contact{
-        height: 175px;
+        min-height: 175px;
         background-color: var(--yellow);
         color: var(--black);
         text-align: center;
